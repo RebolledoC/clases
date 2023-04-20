@@ -1,0 +1,19 @@
+fun main() {
+    var txt = "estoy esperando que este texto cambie"
+	
+    
+    for(i in txt)
+        when(i){
+            'e'->txt=txt.replace(i,'x') 
+            't'->txt=txt.replace(i,'=')
+            'u'->txt=txt.replace(i,'?')
+            'r'->txt=txt.replace(i,'&')
+            'o'->txt=txt.replace(i,'!')
+            'c'->txt=txt.replace(i,'º')
+            's'->txt=txt.replace(i,'ª')
+            ' '->txt=txt.replace(i,'+')
+            'm'->txt=txt.replace(i,'*')
+            'b'->txt=txt.replace(i,'❤')
+            'i'->txt=txt.replace(i,'#')
+            }
+    print(txt)
