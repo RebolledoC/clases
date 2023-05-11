@@ -1,0 +1,615 @@
+fun main() {
+    val mes = 5
+    val dia = 1
+   
+    println (when (mes){
+        1 -> "enero" 
+        2->"febrero" 
+        3-> "marzo" 
+        4-> "abril" 
+        5-> "mayo" 
+        else-> "error"
+    } 
+   )      
+  println (when (dia){
+      1-> "lunes"
+     2-> "martes"
+      3-> "miercoles"
+      4-> "jueve"
+      5-> "viernes"
+      6-> "sabado"
+      7-> "domingo"
+      else-> "error"
+  })
+     }
+
+-------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var num = 0
+    val n = 3
+    while (num<10){
+        num+=1
+        println(num)
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------
+   while (numero!=51){
+            if (numero % 2== 0){
+                println(numero)
+            }
+            numero+=1
+        }
+---------------------------------------------------------------------------------------------------------------------------
+fun main() {
+   var count = 0 
+    val nombre = "hola me llamo maxi y estoy programando"
+    for(letra in nombre){
+        if (letra == 'l'){
+            print('x')
+            count++
+        }else{
+           print(letra)
+        }
+    }    
+}
+----------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var num= 50
+    while(num!=0){
+ 		println(num)
+        num-=1
+    }
+ }
+-----------------------------------------------------------------------------------------------------------------------------
+var num = 50
+   for (it in 0..50){
+       println(num)
+       num-=1
+   }
+---------------------------------------------------------------------------------------------------------------------------
+fun main() {
+val inicio=50
+    val fin =120
+    for(it in inicio..fin){
+        println(it)
+ }
+----------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var arreglo = arrayOf(1,2,3,4,5,6,7,8,9,10)
+    println(arreglo[5])
+    for(i in arreglo.indices){println(arreglo[i])
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var arreglo = arrayOf(1,2,30,40,5,6,7,8,9,10)
+    var mayor = 0
+    for(i in arreglo.indices){
+    	if (arreglo[i]>mayor){
+            mayor = arreglo[i]
+        }
+        
+    }
+    print(mayor)
+}
+----------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var arreglo= arrayOf ("enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre")
+    
+    for(i in arreglo.indices){
+        	println(arreglo[i])
+        }
+}
+--------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var arreglo= arrayOf ("enero" ,
+                          "febrero" ,
+                          "marzo" ,
+                          "abril" ,
+                          "mayo"
+                           ,"junio" ,"julio" ,"agosto" ,"septiembre" ,"octubre" ,"noviembre" ,"diciembre")
+     var dias= arrayOf (31,28,31,30,31,30,31,31,30,31,30,30)
+     
+    for(i in arreglo.indices){
+        	println(arreglo[i])
+            println(dias[i])
+        }
+}
+------------------------------------------------------------------------------------------------------------------------------------
+var numeros = arrayOf (1,2,3,4,56,8,9,12,3,1,23,4,57,8,3,1,24)
+var aux =0
+fun main() {
+    for(i in numeros.indices){
+        for(j in 0..numeros.size-2){
+            if(numeros[j]>numeros[j+1]){
+                aux = numeros[j]
+                numeros[j] = numeros[j+1]
+                numeros[j+1] = aux
+            }
+           
+        }
+    }
+    for(i in numeros.indices){
+    	println(numeros[i])
+	}
+  
+}
+-------------------------------------------------------------------------------------------------------------------------------------
+//seleccion
+fun main() {
+    
+    var lista = arrayOf(2,4,1,24,5,6,1,2,5,1,2,3,5)
+    
+    var menor=0
+    var posicion=0
+    var a=0
+    var tem =0
+    for (i in 0..lista.size-1){
+        menor=lista[i]
+        posicion=i
+        for(j in i+1..lista.size-1){
+            if(lista[j]<menor){
+                menor=lista[j]
+                posicion=j
+            }
+        }
+         if(posicion!=i){
+            tem=lista[i]
+            lista[i]=lista[posicion]
+            lista[posicion]=tem
+        }
+-----------------------------------------------------------------------------------------------------------------------------------------
+//ataque de fuerza bruta//
+fun main() {
+  var lista = arrayOf("a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x",
+                      "y","z")
+ 
+   for (i in lista.indices){
+       for (j in lista.indices){
+           for (k in lista.indices){
+      			println("${lista[i]}${lista[j]}${lista[k]}")
+           }
+       }
+   }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+   var numeros=arrayOf(1,2,3,4,5,6,7,8,9,10)
+   var total = numeros.size
+    
+   var array2=IntArray(total+1)
+   
+    for(i in array2.indices){
+    	println(array2[i])
+}
+}
+--------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+   var numeros=intArrayOf(1,2,3,4,5,6,7,8,9,10)
+   var total = numeros.size
+   var num = 11
+    var array2=IntArray(total+1)
+   
+    for(i in array2.indices){
+        if(i==total){
+            array2[i]=num
+        }else{ 
+        	array2[i] = numeros[i]
+        }
+        
+	}
+    for(i in array2.indices){
+    	println(array2[i])
+	}
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+esto sirve para agregar un numero al arrayOf
+fun main() {
+   var numeros=intArrayOf(1,2,3,4,5,6,7,8,9,10)
+   					 //11,0,0,0,0,0,0
+   var total = numeros.size
+   var num = 11
+    var array2=IntArray(total+1)
+   
+    for(i in array2.indices){
+        if(i==0){
+            array2[i]=num
+        }else{ 
+        	array2[i] = numeros[i-1]
+        }
+        
+	}
+    for(i in array2.indices){
+    	println(array2[i])
+	}
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+   var array=arrayOf(1,2,3,4)
+    var list=mutableListOf(1,2,3,4)
+    println(list)
+    list.add(5)
+    println(list)
+    list.add(0,10)
+    println(list)
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var list=mutableListOf("lunes","martes","miercoles","jueves")
+    list.add("viernes")
+    list.add("sabado")
+    list.add("domingo")
+    //list.removefirst() saca el primero
+    //list.removelast() saca el ultimo
+    //list.first() accede a la primera posicion
+    //list.last() accede a la ultima posicion
+    print(list)
+    
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var list=mutableListOf("lunes","martes","miercoles","jueves")
+    list.add("viernes")
+    list.add("sabado")
+    list.add("domingo")
+    //list.removefirst() saca el primero
+    //list.removelast() saca el ultimo
+    //list.first() accede a la primera posicion
+    //list.last() accede a la ultima posicion
+    println(list)
+    var primero=list.first()
+    for(i in list.indices){
+        primero= list.first()
+        list.removeFirst()
+        list.add(primero)
+        println(list)
+    }
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var list=arrayOf(1,2,3,4,5,6,7,8,9,10)
+    var listb=arrayOf(1,2,3,4,5,6,7,8,9,10)
+    				//1,11,0,0,0,0,0,0,0,0
+    var total = list.size+listb.size
+    var listc=IntArray(total)
+   
+    for(i in listc.indices){
+        if(i < list.size){
+            listc[i]=list[i]
+        }else{
+            listc[i]=listb[i-list.size]
+        }
+    
+    }
+    for(i in listc.indices){
+        println(listc[i])
+    }
+}    
+------------------------------------------------------------------------------------------------------------------------------------------------
+//cambia el orden del mutablelistOF//
+fun main() {
+    var list=mutableListOf("primero","segundo","tercero","ultimo")
+    var pila=mutableListOf<String>()
+   	for (i in list.indices){
+        pila.add(0,list.first())
+        list.removeFirst() 
+        println(pila)
+       
+        }
+        
+       for(j in pila.indices){
+           list.add(0,pila.first())
+           pila.removeFirst()
+       }
+        println(list)
+    
+       
+       
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+var list= listOf("estoy", "programando", "esto")
+var letra= "g"
+  
+
+for(i in list.indices){
+     for(j in list[i]){
+     	if(j.toString() == letra){
+        	println(list[i])
+            break
+    	}
+    }
+
+	}
+}
+-------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+    var list = mutableListOf("lunes","martes","miercoles","jueves","sabado","domingo")
+    var palabra= "l"
+    var newList = list.filter{it.toLowerCase().contains(palabra.toLowerCase())}
+    println(newList)
+    //.tolowerCase() pasa de mayuscula a minusculas
+    //.filter{it} filtrar
+    //contains() pregunta si contiene
+    //toUpperCase() pasa de minusculas a mayuscula
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+borra los espacios y remplasa las letra p y e por mayusculas
+fun main() {
+    var txt= "estoy programando esto"
+    		//estoyProgramandoEsto
+    var txt2=""
+	for(i in txt.indices){
+        if(i>0){
+            if(txt[i]!=' '){
+               if(txt[i-1]==' '){
+                    txt2+=txt[i].uppercase()  
+                }else{
+                    txt2+=txt[i]
+                } 
+            }
+        }else{
+           txt2+=txt[i] 
+        }
+    }
+   print(txt2)
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+calculadora de porsentaje
+fun main() {
+    var numero:Double
+    var porciento:Double
+    var resultado:Double
+    numero = 500.0
+    porciento = 115.3
+   resultado = (numero*(porciento/100))
+  
+    print(resultado)
+
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+encriptar texto,cambia las letras por simbolos.
+fun main() {
+    var txt = "estoy esperando que este texto cambie"
+	
+    
+    for(i in txt)
+        when(i){
+            'e'->txt=txt.replace(i,'x') 
+            't'->txt=txt.replace(i,'=')
+            'u'->txt=txt.replace(i,'?')
+            'r'->txt=txt.replace(i,'&')
+            'o'->txt=txt.replace(i,'!')
+            'c'->txt=txt.replace(i,'º')
+            's'->txt=txt.replace(i,'ª')
+            ' '->txt=txt.replace(i,'+')
+            'm'->txt=txt.replace(i,'*')
+            'b'->txt=txt.replace(i,'❤')
+            'i'->txt=txt.replace(i,'#')
+            }
+    print(txt)
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+  
+   
+   //multiplos de 3 es king.multiplo 5 es kong. 3 y 5 king kong
+   //un multiplo de 3 es cuando cualquier numero se multiplica *3
+   //un numero es multiplo de 5 si caulquier numero se multiplica * 5
+     for(i in 1..100){
+         if(i%5==0&&i%3==0){
+              println("king kong")
+         }else if(i%3==0){
+              println("king") 
+         }else if(i%5==0){
+              println("kong")     
+         }else{    
+        	println(i)
+         }
+     }
+ 
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+   //multiplos de 3 es king.multiplo 5 es kong. 3 y 5 king kong
+   //un multiplo de 3 es cuando cualquier numero se multiplica *3
+   //un numero es multiplo de 5 si caulquier numero se multiplica * 5
+     for(i in 1..107){
+          if(i%5==0 || i%3==0 || i%7==0){
+                 if(i%3==0){
+                      print("king ") 
+                 }
+                 if(i%5==0){
+                  	print("kong ")   
+             	}
+                if(i%7==0){
+                  print("rey ") 
+                }  
+            	println("")
+         }else{
+            println(i)     
+        }
+	}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+triangulo de pascal
+fun main() {
+    crearTriangulo(12)
+    //print(combinatoria(3, 2))
+}
+
+
+fun factorial(n1:Int):Int {
+		var miNum = 1
+    	for(i in 1..n1) {
+			miNum*=i
+		}
+		return miNum
+	}
+
+
+fun combinatoria(n1:Int, n2:Int):Int {
+		return (factorial(n1) / (factorial(n2)*factorial(n1-n2)))
+	}
+	
+    
+fun crearTriangulo(n_filas:Int) {
+		for(fila in 1..n_filas) {
+			for(i in 0..n_filas-fila) {
+				print(" ")
+			}
+			if(fila == 1) {
+				println("1 1")
+			}else {
+				for(i in 0..fila) {
+					print("${combinatoria(fila, i)} ")
+				}
+				println()
+			}
+		}
+	}
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+de 3 en 3 es king y 5 en 5 es kong 
+fun main() {
+    for (i in 1..100){
+        when(i){
+            in 0..100 step 15-> println("king kong")
+             in 0..100 step 5-> println("kong")
+              in 0..100 step 3-> println("king")
+              else->println(i)
+               
+        }
+    } 
+    
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clase persona
+fun main() {
+	var cristian = persona()
+ 	println(cristian.nombre)
+	cristian.imprimirPersona()
+   	cristian.imc()
+	cristian.peso=30
+    cristian.imc()
+}
+class persona(){
+    //atributos
+   	var nombre= "crsitian"
+  	var edad= 21
+    var altura=1.79
+    var peso= 0 
+    var tiposangre= "?"
+	
+    //metodos
+    fun imprimirPersona(){
+        print("la persona tiene $edad y su altura es de $altura")
+    }
+
+    fun imc(){
+        print("el imc de $nombre es de ${peso/altura*altura} ")
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+	var acuario = persona()
+ 	println(acuario.nombre)
+	acuario.imprimirPersona()
+   	acuario.litros()
+	acuario.peso=3
+    acuario.litros()
+}
+class persona(){
+    //atributos
+   	var nombre= "acuario"
+    var peso= 3
+  	var ancho= 20
+    var altura=20
+    var largo= 40 
+    var tipoagua= "mojada"
+	
+    //metodos
+    fun imprimirPersona(){
+        print("el acuario mide $altura y tiene un largo $largo y el ancho es de $ancho")
+    }
+
+    fun litros(){
+        println(" el peso del acuario es de $peso y los litros del acuario son de ${largo*ancho*altura/1000}")
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+fun main() {
+
+    var acuario1=acuario(29,30,20)
+    var acuario2=(24)
+    var acuario3= acuario(21,79,71)
+    
+    acuario3.imprimirAcuario()
+    acuario3.imprimirVolumen()
+    acuario3.volumen =40
+    acuario3.imprimirVolumen()
+    acuario3.imprimirAcuario()
+}
+
+class acuario(
+    var ancho:Int,
+    var altura:Int,
+    var largo:Int = 60){    
+    var volumen:Int
+        get()=(ancho*altura*largo)/1000
+        set(valor){altura=(valor*1000)/(ancho*largo)}
+
+    init{
+        println("se creo el objeto")
+    }
+    
+    fun imprimirAcuario(){
+        println("el acuario tiene $ancho cm tiene $largo cm de largo y su altura es de $altura cm")
+    }
+     fun imprimirVolumen(){
+        println("el volumen es de $volumen")
+    }
+
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+open class padre(var altura:Int) {
+
+    open var volumen =0
+    open var forma =""
+
+    fun imprimir(){
+        println("la altura del acuario es de $altura el largo del acuario es $ el ancho del acuario es de $")
+    }
+    fun imprimirVolumen(){
+        println("el volumen es : $volumen")
+    }
+    fun imprimirForma(){
+        println("tiene forma de $forma")
+    }
+
+}
+import kotlin.math.PI
+
+class cilindro(radio:Int, altura:Int):padre(altura) {
+
+    override var volumen = ((PI*radio*radio*altura)/1000).toInt()
+    override var forma = "Cilindro"
+}
+fun main() {
+
+
+    val acuarioRect = acuario(40,40,40)
+    val acuarioCili = cilindro(30,50)
+    acuarioRect.imprimir()
+    acuarioCili.imprimir()
+    acuarioRect.imprimirVolumen()
+    acuarioCili.imprimirVolumen()
+    acuarioCili.imprimirForma()
+    acuarioRect.imprimirForma()
+}
+class acuario(ancho:Int,largo:Int,altura:Int):padre(altura) {
+
+    override var volumen = (ancho*altura*largo)/1000
+    override var forma = "Rectangulo"
+
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ resultado = "";
+        welcomeText.setText(resultado);   

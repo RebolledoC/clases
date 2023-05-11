@@ -1,0 +1,27 @@
+val a = 24
+val b = 21
+
+fun main() {
+    
+var num = 5
+print(when (num){
+    1->suma()
+    2->resta()
+    3->multiplicar()
+    4->dividir()
+    5->prueba()
+    else->"error"
+})
+      
+      }
+
+fun suma():Int{return a+b}
+fun resta():Int{return a-b}
+fun multiplicar():Int{return a*b}
+fun dividir():Int{return a/b}
+
+fun prueba():String{
+   
+   if ( a % 2== 0)  return "es par"
+   else return "es impar"
+}

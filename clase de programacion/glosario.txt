@@ -1,0 +1,44 @@
+16/03/23
+Var nombre2 =12
+var nombre3 =5
+println: esta imprime haciendo un salto de linea
+println (nombre2 + nomre3) =17
+int :son numeros enteros de menor tamaño
+double :son numeros grandes y ocupa mas espacio en memoria
+boolean: es verdadero o falso
+long: son numeros con muchos desimales
+float: son numeros con desimales
+if: para hacer una pregunta
+investigar sobre char
+kotlin
+!=: son distintos
+==: son iguales
+>: es menor que..
+else: y si no
+&&: es una y y sirve para poner condiciones
+%: para dividir da el resto
+return: devuelve un resultado o numero
+string: es para crear una cadena
++=: suma de a 1
+++=
+while: mientras hace esta operacion
+strin: recorre la posicion del "hola"
+posicion 0=h 1=o 2=l
+break: para la operacion
+ || es una o y sirve para
+step: son pasos ejemplo 3 en 3
+get:recibe algo
+readln: lee lo que le ingresamos por teclado
+polimorfismo: es los objetos pueden tomar  muchas formas
+override: sobreescritura, sirve para sobre escribir metodos y atributos 
+encasulamiento: ocultar la implementacion de los metodos
+/// modificadores de acceso
+protect:solo puede acceder desde el mismo package
+private: solo puedo acceder desde la misma clase
+public: todos pueden acceder
+instaciar:crear objetos
+interfas: herencia multiple, puede heredar a la funcion abstracta
+list.removefirst() saca el primero
+list.removelast() saca el ultimo
+list.first() accede a la primera posicion
+list.last() accede a la ultima posicion
