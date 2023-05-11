@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox accessibleRole="IMAGE_VIEW" alignment="CENTER" cache="true" prefHeight="302.0" prefWidth="365.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadora.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label fx:id="primero" prefHeight="17.0" prefWidth="242.0" textFill="#c72088" />
+
+    <Label fx:id="welcomeText" prefHeight="17.0" prefWidth="217.0" textFill="#ee06ee">
+      <effect>
+         <InnerShadow>
+            <color>
+               <Color red="0.9216547012329102" green="0.009999999776482582" blue="1.0" />
+            </color>
+         </InnerShadow>
+      </effect></Label>
+   <GridPane prefHeight="100.0" prefWidth="378.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="87.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+          <Button fx:id="num1" onAction="#onUnoButtonClick" prefHeight="25.0" prefWidth="28.0" text="1" textFill="#10cbe4" GridPane.columnIndex="1">
+            <cursor>
+               <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.01352339144796133" green="0.9416788220405579" blue="0.9736841917037964" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="num5" mnemonicParsing="false" onAction="#oncincoButtonClick" prefHeight="25.0" prefWidth="27.0" text="5" textFill="#e40bb1" GridPane.rowIndex="1">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.7166733741760254" green="0.03680000081658363" blue="0.9200000166893005" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="num9" mnemonicParsing="false" onAction="#onnueveButtonClick" prefHeight="25.0" prefWidth="28.0" text="9" textFill="#cd0dd0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.7569200992584229" green="0.03216374292969704" blue="0.8684210777282715" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="num2" mnemonicParsing="false" onAction="#ondosButtonClick" prefHeight="25.0" prefWidth="29.0" text="2" textFill="#14b4d0" GridPane.columnIndex="2">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.030701754614710808" green="0.8709795475006104" blue="0.9473684430122375" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="num6" mnemonicParsing="false" onAction="#onseisButtonClick" prefHeight="25.0" prefWidth="29.0" text="6" textFill="#d00c92" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.8947368264198303" green="0.024853801354765892" blue="0.8222466111183167" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="num0" mnemonicParsing="false" onAction="#onceroButtonClick" prefHeight="25.0" prefWidth="29.0" text="0" textFill="#11c4e8" GridPane.rowIndex="2">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.03673245757818222" green="0.7830135226249695" blue="0.8815789222717285" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="num3" mnemonicParsing="false" onAction="#ontresButtonClick" prefHeight="25.0" prefWidth="28.0" text="3" textFill="#11b1cd" GridPane.columnIndex="3">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.05226608365774155" green="0.7868055701255798" blue="0.8684210777282715" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="num8" mnemonicParsing="false" onAction="#onochoButtonClick" prefHeight="25.0" prefWidth="29.0" text="8" textFill="#d307d0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.8148391842842102" green="0.03892543911933899" blue="0.9342105388641357" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="num4" mnemonicParsing="false" onAction="#oncuatroButtonClick" prefHeight="25.0" prefWidth="28.0" text="4" textFill="#13b4c9" GridPane.columnIndex="4">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.08187134563922882" green="0.7660818696022034" blue="0.8421052694320679" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="num7" mnemonicParsing="false" onAction="#onsieteButtonClick" prefHeight="25.0" prefWidth="29.0" text="7" textFill="#d70da4" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.9062703251838684" green="0.03411306068301201" blue="0.9210526347160339" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="mas" mnemonicParsing="false" onAction="#onMasButtonClick" prefHeight="18.0" prefWidth="31.0" text="+" textFill="#10c1e1" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.025219298899173737" green="0.8343384265899658" blue="0.9078947305679321" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+       <Button fx:id="resta" minWidth="27.0" mnemonicParsing="false" onAction="#onMenosButtonClick" prefHeight="25.0" prefWidth="29.0" text="-" textFill="#11c6dd" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.053849902004003525" green="0.8947368264198303" blue="0.8526924848556519" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="resta1" minWidth="24.0" mnemonicParsing="false" onAction="#onDivButtonClick" prefHeight="25.0" prefWidth="30.0" text="/" textFill="#0fdae1" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.030275341123342514" green="0.8588826060295105" blue="0.9342105388641357" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="borrar" mnemonicParsing="false" onAction="#onborraButtonClick" prefHeight="25.0" prefWidth="28.0" text="c" textFill="#0ecce1">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.027412280440330505" green="0.890899121761322" blue="0.9868420958518982" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+         <Button fx:id="multiplicar" minWidth="23.0" mnemonicParsing="false" onAction="#onPorButtonClick" prefHeight="25.0" prefWidth="28.0" text="*" textFill="#11aedd" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.051169589161872864" green="0.8195662498474121" blue="0.9210526347160339" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+      </children>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </GridPane>
+   <ButtonBar prefHeight="25.0" prefWidth="342.0">
+     <buttons>
+         <ImageView fitHeight="51.0" fitWidth="66.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@imaagen.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="raiz" minWidth="24.0" mnemonicParsing="false" onAction="#onRaizButtonClick" prefHeight="25.0" prefWidth="30.0" text=" √" textFill="#0fdae1">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.030275341123342514" green="0.8588826060295105" blue="0.9342105388641357" />
+                  </color>
+               </InnerShadow>
+            </effect>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onIgualButtonClick" text="=" textFill="#f201ff">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.8801007270812988" green="0.01656920090317726" blue="0.8947368264198303" />
+                  </color>
+               </InnerShadow>
+            </effect></Button>
+     </buttons>
+   </ButtonBar>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <InnerShadow>
+         <color>
+            <Color red="1.0" green="0.0416666679084301" blue="0.9361110925674438" />
+         </color>
+      </InnerShadow>
+   </effect>
+</VBox>
