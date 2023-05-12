@@ -12,9 +12,23 @@ public class HelloController {
 
     @FXML
     private CheckBox pies;
+    @FXML
+    private CheckBox kilomtros;
+    @FXML
+    private CheckBox centi;
+    @FXML
+    private CheckBox yar;
+    @FXML
+    private CheckBox pie;
+    @FXML
+    private CheckBox pulgadas;
+
+
+
+
 
     String resultado = "";
-    //String op = "";
+
 
 
     @FXML
@@ -76,6 +90,14 @@ public class HelloController {
         resultado += "0";
         welcomeText.setText(resultado);
     }
+    @FXML
+    protected void oncButtonClick() {
+        resultado = "";
+        welcomeText.setText(resultado);
+        primero.setText(resultado);
+    }
+
+
 
     @FXML
     protected void onIgualButtonClick() {
@@ -87,8 +109,24 @@ public class HelloController {
             result = (num-32)*5/9;
 
         }
+        if(kilomtros.isSelected()){
+            result= (num*1.609);
+        }
+        if(centi.isSelected()){
+            result= (num*10);
+        }
+        if(yar.isSelected()){
+            result= (num/1760);
+        }
+        if(pie.isSelected()){
+            result= (num/ 3.281);
+        }
+        if(pulgadas.isSelected()){
+            result= (num* 25.4);
+        }
         welcomeText.setText(String.valueOf(result));
     }
+
 
     @FXML
     protected void pies() {

@@ -6,19 +6,37 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<VBox alignment="CENTER" prefHeight="204.0" prefWidth="627.0" spacing="20.0" style="-fx-background-color: #5e5d5d;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.convertidor.HelloController">
+<VBox alignment="CENTER" prefHeight="336.0" prefWidth="627.0" spacing="20.0" style="-fx-background-color: #393939;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.convertidor.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <Label fx:id="primero" layoutX="230.0" layoutY="30.0" prefHeight="17.0" prefWidth="23.0" textFill="WHITE" />
+   <Label fx:id="primero" layoutX="230.0" layoutY="30.0" prefHeight="17.0" prefWidth="161.0" textFill="WHITE" />
 
-    <Label fx:id="welcomeText" textFill="#2294cd" />
-   <GridPane prefHeight="90.0" prefWidth="517.0">
+    <Label fx:id="welcomeText" prefHeight="17.0" prefWidth="180.0" textFill="#2294cd" />
+   <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #393939;">
+     <items>
+         <CheckBox fx:id="pies" mnemonicParsing="false" prefHeight="17.0" prefWidth="154.0" text=" celcius a fahrenheit" textFill="#fffbfb">
+            <effect>
+               <DropShadow />
+            </effect>
+         </CheckBox>
+         <CheckBox fx:id="kilomtros" mnemonicParsing="false" text=" kilomtros a millas" textFill="WHITE" />
+         <CheckBox fx:id="centi" layoutX="168.0" layoutY="17.0" mnemonicParsing="false" text="centimetros a milimetros" textFill="WHITE" />
+     </items>
+   </ToolBar>
+   <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #393939;">
+     <items>
+         <CheckBox fx:id="yar" mnemonicParsing="false" text="yarda a milla" textFill="WHITE" />
+         <CheckBox fx:id="pie" mnemonicParsing="false" text="pie a metros" textFill="#f8f8f8" />
+         <CheckBox fx:id="pulgadas" mnemonicParsing="false" text="pulgadas a milimetros" textFill="#fffbfb" />
+     </items>
+   </ToolBar>
+   <GridPane prefHeight="121.0" prefWidth="503.0">
      <columnConstraints>
        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="147.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="146.0" />
      </columnConstraints>
      <rowConstraints>
        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -90,7 +108,7 @@
                   </color>
                </InnerShadow>
             </effect></Button>
-         <Button fx:id="num9" layoutX="110.0" layoutY="73.0" mnemonicParsing="false" onAction="#on9ButtonClick" style="-fx-background-color: #7c7c7c;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <Button fx:id="num9" layoutX="110.0" layoutY="73.0" mnemonicParsing="false" onAction="#on9ButtonClick" prefHeight="18.0" prefWidth="23.0" style="-fx-background-color: #7c7c7c;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
             <effect>
                <InnerShadow>
                   <color>
@@ -106,10 +124,6 @@
                   </color>
                </InnerShadow>
             </effect></Button>
-         <CheckBox fx:id="pies" mnemonicParsing="false" prefHeight="17.0" prefWidth="154.0" text=" celcius a fahrenheit" textFill="#fffbfb" GridPane.columnIndex="3" GridPane.rowIndex="1">
-            <effect>
-               <DropShadow />
-            </effect></CheckBox>
          <Button mnemonicParsing="false" onAction="#onIgualButtonClick" style="-fx-background-color: #7c7c7c;" text="=" GridPane.columnIndex="3" GridPane.rowIndex="2">
             <effect>
                <InnerShadow>
@@ -118,6 +132,22 @@
                   </color>
                </InnerShadow>
             </effect></Button>
+         <Button fx:id="borrar" mnemonicParsing="false" onAction="#oncButtonClick" style="-fx-background-color: #7c7c7c;" text="c" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <effect>
+               <InnerShadow>
+                  <color>
+                     <Color red="0.19736842811107635" green="0.19188596308231354" blue="0.19188596308231354" />
+                  </color>
+               </InnerShadow>
+            </effect>
+         </Button>
       </children>
    </GridPane>
+   <effect>
+      <DropShadow>
+         <color>
+            <Color red="1.0" green="1.0" blue="1.0" />
+         </color>
+      </DropShadow>
+   </effect>
 </VBox>
