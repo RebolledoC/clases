@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI epf:version="1.5.1" xmi:version="2.0" xmlns:epf="http://www.eclipse.org/epf" xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.6/uma.ecore" xmlns:org.eclipse.epf.uma.resourcemanager="http:///org/eclipse/epf/uma/resourcemanager.ecore" xmlns:xmi="http://www.omg.org/XMI">
+<org.eclipse.epf.uma.resourcemanager:ResourceManager guid="_gx5XsXO6EeCCbp4vAjzDJA" xmi:id="_gx5XsXO6EeCCbp4vAjzDJA">
+<subManagers href="uma://_D9DBYHO8EeCqIJh-M0Zt8w#_D-FjMHO8EeCqIJh-M0Zt8w" xmi:id="_D-FjMHO8EeCqIJh-M0Zt8w">
+</subManagers>
+<subManagers href="uma://_yMkM4HO8EeCqIJh-M0Zt8w#_yMtW0HO8EeCqIJh-M0Zt8w" xmi:id="_yMtW0HO8EeCqIJh-M0Zt8w">
+</subManagers>
+<subManagers href="uma://_A3_P4IXOEeCOoYSiXtJsQA#_A3_P8YXOEeCOoYSiXtJsQA" xmi:id="_A3_P8YXOEeCOoYSiXtJsQA">
+</subManagers>
+<resourceDescriptors id="_gx5XsHO6EeCCbp4vAjzDJA" uri="" xmi:id="_gx5XsnO6EeCCbp4vAjzDJA">
+</resourceDescriptors>
+<resourceDescriptors id="_D9DBYHO8EeCqIJh-M0Zt8w" uri="base/plugin.xmi" xmi:id="_D-PUMHO8EeCqIJh-M0Zt8w">
+</resourceDescriptors>
+<resourceDescriptors id="_yMkM4HO8EeCqIJh-M0Zt8w" uri="procesos/plugin.xmi" xmi:id="_yMtW0XO8EeCqIJh-M0Zt8w">
+</resourceDescriptors>
+<resourceDescriptors id="_A3_P4IXOEeCOoYSiXtJsQA" uri="publicacion/plugin.xmi" xmi:id="_A3_P8oXOEeCOoYSiXtJsQA">
+</resourceDescriptors>
+</org.eclipse.epf.uma.resourcemanager:ResourceManager>
+<org.eclipse.epf.uma:MethodLibrary briefDescription="Libreria que describe el proceso unificado para ejecutar los procesos de desarrollo de software en la Universidad EAFIT" guid="_gx5XsHO6EeCCbp4vAjzDJA" name="epf_eafitup_1.0_20110415" xmi:id="_gx5XsHO6EeCCbp4vAjzDJA">
+<methodElementProperty name="library_synFree" value="true" xmi:id="_g4mcoHO6EeCCbp4vAjzDJA">
+</methodElementProperty>
+<methodPlugins href="uma://_D9DBYHO8EeCqIJh-M0Zt8w#_D9DBYHO8EeCqIJh-M0Zt8w" xmi:id="_D9DBYHO8EeCqIJh-M0Zt8w">
+</methodPlugins>
+<methodPlugins href="uma://_yMkM4HO8EeCqIJh-M0Zt8w#_yMkM4HO8EeCqIJh-M0Zt8w" xmi:id="_yMkM4HO8EeCqIJh-M0Zt8w">
+</methodPlugins>
+<methodPlugins href="uma://_A3_P4IXOEeCOoYSiXtJsQA#_A3_P4IXOEeCOoYSiXtJsQA" xmi:id="_A3_P4IXOEeCOoYSiXtJsQA">
+</methodPlugins>
+<methodElementProperty value="0">
+</methodElementProperty>
+<methodElementProperty value="_D9DBYHO8EeCqIJh-M0Zt8w">
+</methodElementProperty>
+<methodElementProperty value="base">
+</methodElementProperty>
+<methodElementProperty value="_yMkM4HO8EeCqIJh-M0Zt8w">
+</methodElementProperty>
+<methodElementProperty value="procesos">
+</methodElementProperty>
+<methodElementProperty value="_A3_P4IXOEeCOoYSiXtJsQA">
+</methodElementProperty>
+<methodElementProperty value="publicacion">
+</methodElementProperty>
+</org.eclipse.epf.uma:MethodLibrary>
+</xmi:XMI>
